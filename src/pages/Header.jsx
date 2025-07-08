@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import '../style/Header.css'; 
 
 function Header() {
@@ -10,18 +11,18 @@ function Header() {
 
     return (
         <header className="header">
-            <h1><a href="/" style={{ textDecoration: 'none',color:'#F0DAC5' }}>Adv. Sonam Pandey</a></h1>
+            <h1><Link to="/" style={{ textDecoration: 'none',color:'#F0DAC5' }}>Adv. Sonam Pandey</Link></h1>
             <nav>
                 <ul>
-                    <li><a href="/" >Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/specialist">Specialist</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/Gallery">Gallery</a></li>
-                    <li><a href="/testimonials">Testimonials</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <button><a href="/consultation" style={{ textDecoration: 'none',color:'#F0DAC5'}}>Consultation</a></button>
+                    <li><Link to="/" >Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/specialist">Specialist</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/Gallery">Gallery</Link></li>
+                    <li><Link to="/testimonials">Testimonials</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                    <button><Link to="/consultation" style={{ textDecoration: 'none',color:'#F0DAC5'}}>Consultation</Link></button>
                 </ul>
             </nav>
 
@@ -36,15 +37,15 @@ function Header() {
             <div className={`side-menu${menuOpen ? " active" : ""}`}>
                 <button className="close-btn" onClick={toggleMenu} aria-label="Close menu">&times;</button>
                 <ul>
-                    <li><a href="/" onClick={toggleMenu}>Home</a></li>
-                    <li><a href="/about" onClick={toggleMenu}>About</a></li>
-                    <li><a href="/specialist" onClick={toggleMenu}>Specialist</a></li>
-                    <li><a href="/services" onClick={toggleMenu}>Services</a></li>
-                    <li><a href="/blog" onClick={toggleMenu}>Blog</a></li>
-                    <li><a href="/Gallery" onClick={toggleMenu}>Gallery</a></li>
-                    <li><a href="/testimonials" onClick={toggleMenu}>Testimonials</a></li>
-                    <li><a href="/contact" onClick={toggleMenu}>Contact</a></li>
-                    <button onClick={toggleMenu}><a href="/consultation" style={{ textDecoration: 'none',color:'#F0DAC5'}}>Consultation</a></button>
+                    <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                    <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+                    <li><Link to="/specialist" onClick={toggleMenu}>Specialist</Link></li>
+                    <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+                    <li><Link to="/blog" onClick={toggleMenu}>Blog</Link></li>
+                    <li><Link to="/Gallery" onClick={toggleMenu}>Gallery</Link></li>
+                    <li><Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link></li>
+                    <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+                    <button onClick={toggleMenu}><Link to="/consultation" style={{ textDecoration: 'none',color:'#F0DAC5'}}>Consultation</Link></button>
                 </ul>
             </div>
         </header>

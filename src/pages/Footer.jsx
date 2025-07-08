@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../style/Footer.css';
 import { FaPhoneAlt } from "react-icons/fa";
 import { GiRotaryPhone } from "react-icons/gi";
@@ -17,12 +18,12 @@ function Footer() {
                 <div className="second">
                     <h1>Quick Links</h1>
                     <ul>
-                        <li><a href="/"><IoIosArrowForward /> Home</a></li>
-                        <li><a href="/about"><IoIosArrowForward /> About</a></li>
-                        <li><a href="/specialist"><IoIosArrowForward /> Specialist</a></li>
-                        <li><a href="/services"><IoIosArrowForward /> Services</a></li>
-                        <li><a href="/Gallery"><IoIosArrowForward /> Gallery</a></li>
-                        <li><a href="/testimonials"><IoIosArrowForward /> Testimonials</a></li>
+                        <li><Link to="/"><IoIosArrowForward /> Home</Link></li>
+                        <li><Link to="/about"><IoIosArrowForward /> About</Link></li>
+                        <li><Link to="/specialist"><IoIosArrowForward /> Specialist</Link></li>
+                        <li><Link to="/services"><IoIosArrowForward /> Services</Link></li>
+                        <li><Link to="/Gallery"><IoIosArrowForward /> Gallery</Link></li>
+                        <li><Link to="/testimonials"><IoIosArrowForward /> Testimonials</Link></li>
                     </ul>
                 </div>
                 <div className="third">

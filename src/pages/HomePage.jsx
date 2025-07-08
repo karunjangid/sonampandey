@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../style/HomePage.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -182,7 +183,7 @@ function HomePage() {
                 <div className="hero-content">
                   <h1>{heroData[currentHeroIndex].title}</h1>
                   <p>{heroData[currentHeroIndex].description}</p>
-                  <button><a href="/consultation" style={{ textDecoration: 'none',color:'#F0DAC5' }}>Book a Schedule Now</a></button>
+                  <button><Link to="/consultation" style={{ textDecoration: 'none',color:'#F0DAC5' }}>Book a Schedule Now</Link></button>
                 </div>
               </div>
             </section>
